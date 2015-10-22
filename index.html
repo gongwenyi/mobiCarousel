@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=Edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>移动端幻灯片插件</title>
+  <link rel="stylesheet" href="css/mobilereset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="carousel" data-setting='{"autoplay":true,"duration":700,"delay":4000,"nav":true}'>
+    <ul>
+      <li><img src="imgs/01.jpg"></li>
+      <li><img src="imgs/02.jpg"></li>
+      <li><img src="imgs/03.jpg"></li>
+      <li><img src="imgs/04.jpg"></li>
+      <li><img src="imgs/05.jpg"></li>
+      <li><img src="imgs/06.jpg"></li>
+    </ul>
+    <div>
+      <span class="current"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="carousel" style="width: 80%;" data-setting='{"autoplay":true,"duration":1000,"delay":5000,"nav":false}'>
+    <ul>
+      <li><img src="imgs/01.jpg"></li>
+      <li><img src="imgs/02.jpg"></li>
+      <li><img src="imgs/03.jpg"></li>
+    </ul>
+    <div>
+      <span class="current"></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/carousel.js"></script>
+  <script>
+    $(function(){
+      Carousel.init($('.carousel'));
+    })
+  </script>
+</body>
+</html>
